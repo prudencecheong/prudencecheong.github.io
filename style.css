@@ -1,207 +1,206 @@
-body {
-    font-family: "Lora", serif;
-    background-color : #fffaf5; 
-    color : #4e342e; 
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(245, 230, 202, 0.6);
+    background-blend-mode: overlay;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
 }
 
 h1 {
-    color: #8d6e63;
-    text-align: center;
-    font-family: "Playfair Display", serif;
-}
-
-h2 {
-    color: #ac8e82;
-    font-family: "Playfair Display", serif;
-    text-align: center;
-}
-
-.navbar {
-    background-color : #8d6e63; 
-    overflow : hidden; 
-}
-
-.navbar ul {
-    list-style-type : none;
-    margin : 0;
-    padding : 0;
-    display : flex;
-    justify-content : center; 
-}
-
-.navbar li a {
-    display : block; 
-    color : white;
-    text-align : center;
-    padding : 25px 20px;
-    font-family: "Playfair Display", serif;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.navbar li a:hover {
-    background-color : #fdf5e6; 
-    color : #5d4037;
-}
-
-
-#main-container {
-    width : 90%;
-    margin : 20px auto; 
-    padding : 30px;
-    background-color : white; 
-    border : 2px solid #d7ccc8;
-    border-radius : 15px;
-    box-shadow : 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.content-row {
-    display : flex;
-    justify-content: space-between;
-    gap : 20px;
-    margin-top : 20px;
-    margin-bottom: 30px;
-}
-
-.card {
-    background-color : #fff9f0; 
-    padding : 20px;
-    border-radius : 15px;
-    flex: 1;
-    text-align : center;
-    border: 1px solid #f3e5f5;
-    margin-top: 20px; 
-    margin-bottom: 20px;
-}
-
-.card img {
-    width: 100%; 
-    height: 250px;
-    object-fit: cover;
-    border-radius : 15px;
-    margin-bottom : 15px;
-    border: 5px solid #fdf5e6;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.interactive-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.interactive-card:hover {
-    transform: translateY(-5px);    
-    box-shadow: 0 15px 30px rgba(141, 110, 99, 0.15);
-}
-
-.embed-section {
-    margin-top : 30px;
-    text-align : center;
-    padding : 20px;
-    background-color : #f7d0dd; 
-    border-radius : 15px;
-    color : #5d4037;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse; 
-    margin: 20px 0;
-    background-color: #ffffff;
-    border-radius: 15px;
-    overflow: hidden; 
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-}
-
-th {
-    background-color: #d4a373; 
-    color: white;
     font-family: 'Playfair Display', serif;
-    padding: 15px;
-    text-align: left;
-    letter-spacing: 1px;
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #3a2a1a;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
 }
 
-td {
-    padding: 15px;
-    border-bottom: 1px solid #faedcd; 
-    color: #5d4037;
-    text-align: left;
-    font-size: 95%;
-    border-right: 1px solid #faedcd;
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #5a4a3a;
 }
 
-.video-container {
-    aspect-ratio: 16 / 9; 
+.asia-map-container {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.asia-map {
     width: 100%;
-    overflow: hidden;
-    border-radius: 12px;
-    border: 5px solid white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 15px;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.video-container iframe {
-    width: 100%;
-    height: 100%;
+.emoji-point {
+    position: absolute;
+    font-size: 35px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
 }
 
-.recipe-list-card {
-    text-align: left;
-    padding: 30px 50px;   
+.emoji-point:hover {
+    transform: translate(-50%, -50%) scale(1.2);
 }
 
-.recipe-list-card h2 {
-    text-align: center;
-}
+.afghanistan { top: 52%; left: 30%; }
+.bangladesh { top: 63%; left: 50%; }
+.cambodia { top: 74%; left: 64%; }
+.china { top: 50%; left: 57%; } 
+.india { top: 66%; left: 40%; }  
+.indonesia { top: 86%; left: 74%; }
+.iran { top: 50%; left: 20%; }
+.iraq { top: 50%; left: 11%; }
+.japan { top: 38%; left: 85%; } 
+.jordan { top: 48%; left: 5%; }
+.kazakhstan { top: 35%; left: 32%; }
+.korea { top: 42%; left: 78%; }   
+.kyrgyzstan { top: 43%; left: 37%; }
+.macao { top: 62%; left: 69%; }    
+.malaysia { top: 84%; left: 62%; }
+.mongolia { top: 37%; left: 57%; }
+.myanmar { top: 65%; left: 55%; }
+.nepal { top: 59%; left: 45%; }
+.oman { top: 65%; left: 20%; }
+.pakistan { top: 57%; left: 32%; }
+.philippines { top: 67%; left: 80%; }
+.russia { top: 21%; left: 45%; }
+.saudiarabia { top: 60%; left: 11%; }
+.srilanka { top: 82%; left: 41%; }
+.taiwan { top: 57%; left: 77%; }
+.tajikistan { top: 47%; left: 33%; }
+.thailand { top: 71%; left: 61%; } 
+.turkey { top: 40%; left: 7%; }
+.turkmenistan { top: 45%; left: 25%; }
+.uae { top: 61%; left: 18%; }
+.uzbekistan { top: 42%; left: 28%; }
+.vietnam { top: 72%; left: 67%; }  
+.yemen { top: 68%; left: 10%; }
 
-.recipe-list-card ul {
-    list-style-type: '🧁 ';
-    padding-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
 
-.recipe-list-card li {
-    margin-bottom: 20px;
-    font-size: 110%;
-    line-height: 1.5;
-}
-
-.recipe-list-card ul li a {
-    color: #8d6e63;
-    text-decoration: none;
-    font-weight: bold;
-    border-bottom: 1px dashed #d4a373;
-    transition: background-color 0.3s;
-}
-
-.recipe-list-card ul li a:hover {
-    color: #d4a373;
-    padding-left: 5px;
-}
-
-.final-footer {
-    background-color: #d7ccc8; 
-    color: white;
-    padding: 40px;
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    width: 480px;
+    background-color: white;
     border-radius: 15px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
 }
 
-.footer-quote {
-    text-align: center;
+.popup.show {
+    display: block;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-info {
+    padding: 20px;
+    position: relative;
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-button:hover {
+    color: red;
+}
+
+#food-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 600;
     font-style: italic;
-    font-size: 1.1rem;
-    margin: 10px 0;
+    letter-spacing: 1px;
+    color: #8b5e3c;
 }
 
-.footer-emojis {
-    text-align: center;
-    font-size: 200%; 
-    margin-top: 15px;
+#food-image {
+    width: 160px;
+    height: 160px;
+    object-fit: cover; 
+    display: block;
+    margin: 10px auto 20px auto;           
+    border-radius: 10px;
+    transition: opacity 0.2s ease;
+    opacity: 1;
+}
+
+#food-image:hover {
+    opacity: 0.95;
+}
+
+#food-description {
+   font-family: 'Lora', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #4a3a2a;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 5px 0;
+}
+
+#back-button {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#back-button:hover {
+    background-color: #e68900;
+}
+
+#page-num {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #8b6914;
+}
+
+#next-button {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#next-button:hover {
+    background-color: #e68900;
 }

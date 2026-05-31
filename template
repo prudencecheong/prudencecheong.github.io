@@ -1,0 +1,32 @@
+const iraqData = {
+    name: "",
+    intro: "",
+    introImage: "",
+
+    foods: [
+        { name: "", 
+            description: " ", 
+            image: "" 
+        },
+
+        { name: "Pide", 
+            description: " ",
+            image: "" 
+        },
+
+        { name: "Sarma", 
+            description: "", 
+            image: ""
+        },
+
+        { name: "Künefe", 
+            description: "", 
+            image: "" 
+        },
+
+        { name: "Kazandibi", 
+            description: "" , 
+            image: "" 
+        }
+    ]
+};
