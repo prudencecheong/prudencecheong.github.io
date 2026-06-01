@@ -3,7 +3,7 @@ const closeButton = document.querySelector(".close-button");
 const nextButton = document.getElementById("next-button");
 const backButton = document.getElementById("back-button");
 const foodTitle = document.getElementById("food-title");
-const foodImage = document.getElementById("food-image");
+const foodImage = document.getElementById("food-pic");
 const foodDescription = document.getElementById("food-description");
 const pageNum = document.getElementById("page-num");
 
